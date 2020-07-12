@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string</title>
+</head>
+
+<body>
+    <script>
+        var str = 'hello world';
+        str.indexOf('a'); //-1 没有就是-1
+        str.indexOf('o'); //4
+        str.lastIndexOf('o'); //last倒叙
+        str.replace('o', 'a');
+        console.log(str.split('o')); //["hell", " w", "rld"]
+        console.log(str.split(''));
+        console.log(str.toLowerCase())
+        console.log(str.toUpperCase())
+        var a = '   aa   bb   ';
+        console.log(a.trim());
+
+        console.log(str.match("o"));
+        console.log(str.match(/o/g));
+        console.log(str.concat('a', 'b', 'c'))
+        console.log('abc'.padStart(10)) // "       abc"
+        'abc'.padStart(10, "123"); // "1231231abc"
+        'abc'.padStart(6, "123465"); // "123abc"
+        'abc'.padStart(8, "0"); // "00000abc"
+        'abc'.padStart(1); // "abc"
+
+        'abc'.padEnd(10); // "abc       "
+        'abc'.padEnd(10, "123"); // "abc1231231"
+        'abc'.padEnd(6, "123465"); // "abc123"
+        'abc'.padEnd(8, "0"); // "abc00000"
+        'abc'.padEnd(1); // "abc"
+        var time = new Date();
+        var h = String(time.getHours()).padStart(2, '0')
+        var m = String(time.getMinutes()).padStart(2, '0')
+        var s = String(time.getSeconds()).padStart(2, '0')
+        console.log(`${h}:${m}:${s}`) //
+    </script>
+</body>
+
+</html>

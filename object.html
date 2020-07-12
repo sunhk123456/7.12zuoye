@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+
+<body>
+    <script>
+        // var obj1 = {
+        //     name: '孙恒奎'
+        // };
+        // var obj2 = {
+        //     age: 23
+        // };
+        // var obj3 = {
+        //     say: function() {
+        //         console.log('说话');
+        //     }
+        // }
+        // console.log(Object.assign(obj1, obj2, obj3)); 
+        // console.log(obj1, obj2);
+        // console.log(Object.is(+0, -0))
+        // Object.is(+0, -0); //false
+        // Object.is(NaN, NaN); //true
+
+        // function a() {}
+        // var b = new a();
+        // console.log(a.prototype.isPrototypeOf(b));
+        // var obj = new Object();
+        // Object.defineProperty(obj, 'name', {
+        //     configurable: false,
+        //     writable: true,
+        //     enumerable: false, //该属性是否可枚举
+        //     value: '孙恒奎'
+        // })
+        // console.log(obj.name)
+
+        // var obj = new Object();
+        // Object.defineProperties(obj, {
+        //     name: {
+        //         value: 'shk',
+        //         configurable: false,
+        //         writable: true,
+        //         enumerable: true
+        //     },
+        //     age: {
+        //         value: 23,
+        //         configurable: true
+        //     }
+        // })
+        // console.log(obj.name, obj.age)
+        // var obj = {
+        //     name: '张三',
+        //     age: 18
+        // };
+        // Object.freeze(obj)
+        // obj.name = '李四';
+        // obj.sex = '男';
+        // console.log(obj)
+
+        // var obj = {
+        //     name: "zhangsan",
+        //     age: 20
+        // }
+        // Object.freeze(obj)
+        // obj.name = "lisi"
+        // console.log(obj.name)
+        // var obj = {
+        //     name: 'shk',
+        //     age: 18,
+        //     say: function() {
+        //         console.log('我就叫shk');
+        //     }
+        // }
+        // for (var i in obj) {
+        //     console.log(obj[i]);
+        // }
+        // var obj = {
+        //     'd': '123',
+        //     'b': '345'
+        // };
+        // console.log(Object.keys(obj)); //['a','b']
+
+        // // 如果键名是数字，则按从小到大排列
+        // // var obj1 = {
+        // //     100: "a",
+        // //     2: "b",
+        // //     7: "c"
+        // // };
+        // // console.log(Object.keys(obj1)); // console: ["2", "7", "100"]
+
+        // // var obj2 = Object.create({}, {
+        // //     getFoo: {
+        // //         value: function() {
+        // //             return this.foo
+        // //         }
+        // //     }
+        // // });
+
+        // // obj2.foo = 1;
+        // // console.log(Object.keys(obj2)); // ["foo"]
+        // Object.getOwnPropertyNames(obj);
+        var obj = {
+            name: 'zhangsan',
+            age: 20
+        };
+        console.log(Object.values(obj));
+    </script>
+</body>
+
+</html>
